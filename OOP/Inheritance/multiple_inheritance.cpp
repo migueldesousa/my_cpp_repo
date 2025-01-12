@@ -28,6 +28,10 @@ class Robot
     {
         cout << "A usar os olhos lazer..." << endl;
     }
+    void Ataca()
+    {
+        cout  << "A atacar o Samuel L. Jackson com dardos venenosos disparados das barbatanas." <<endl;
+    }
 };
 
 class TubaraoMartelo: public Tubarao
@@ -49,7 +53,8 @@ int main()
     cout << "vs" << endl;
     RoboShark rs;
     rs.Nada();
-    rs.Ataca();
+    rs.Tubarao::Ataca();
+    rs.Robot::Ataca();
     rs.UsaOlhosLazer();
     return 0;
 }
